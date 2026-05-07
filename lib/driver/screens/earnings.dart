@@ -45,7 +45,7 @@ class _EarningsState extends State<Earnings>
                 itemCount: snapshot.data!.docs.length,
                 itemBuilder: (context, index) => ListTile(
                   title: Text(
-                    'Amount: ${snapshot.data!.docs[index]['amount']}KES',
+                    'Amount: USD ${snapshot.data!.docs[index]['amount']}',
                   ),
                   subtitle: Text(
                     'Date: ${snapshot.data!.docs[index]['date'].toDate()}',

@@ -81,7 +81,7 @@ class MonitoringDriverState extends State<MonitoringDriver> {
                       ),
                       ListTile(
                         title: const Text('Total Earnings'),
-                        subtitle: Text(user.earnings!.toString() + 'KES'),
+                        subtitle: Text('USD ' + user.earnings!.toString()),
                       ),
                       ListTile(
                         title: const Text('Number of trips'),
