@@ -161,7 +161,7 @@ class _HomePageState extends State<HomePage> {
                                               ? 'Please enter your price'
                                               : null,
                                           decoration: const InputDecoration(
-                                              hintText: 'Offer your fare, KES'),
+                                              hintText: 'Offer your fare, USD'),
                                         ),
                                       ),
                                       ListTile(
@@ -235,7 +235,7 @@ class _HomePageState extends State<HomePage> {
                                 );
                               }
                             },
-                            title: 'Request a vehicle'),
+                            title: 'Request a Biker'),
                       )
                     ],
                   ),

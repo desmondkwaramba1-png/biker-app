@@ -43,7 +43,7 @@ class _RideRequestsState extends State<RideRequests>
               return const Center(child: CircularProgressIndicator());
             } else if (snapshot.data!.docs.isEmpty) {
               return const Center(
-                child: Text('No available requests'),
+                child: Text('No available ride requests'),
               );
             } else {
               return ListView.builder(
@@ -58,7 +58,7 @@ class _RideRequestsState extends State<RideRequests>
                       mainAxisAlignment: MainAxisAlignment.start,
                       crossAxisAlignment: CrossAxisAlignment.start,
                       children: [
-                        const Text('New Request'),
+                        const Text('New Ride Request'),
                         Text('From: ' +
                             snapshot.data!.docs[index]['startAddress']),
                         Text('To: ' + snapshot.data!.docs[index]['endAddress']),
@@ -66,7 +66,7 @@ class _RideRequestsState extends State<RideRequests>
                     ),
                     subtitle: Text('Amount offered: ' +
                         provider.requests[index].price! +
-                        'KES'),
+                        ' USD'),
                     trailing: ElevatedButton(
                       child: const Text('See details'),
                       onPressed: () async {

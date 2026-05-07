@@ -64,13 +64,13 @@ class _DriverMapState extends State<DriverMap> {
                 mainAxisAlignment: MainAxisAlignment.start,
                 crossAxisAlignment: CrossAxisAlignment.start,
                 children: [
-                  const Text('New Request'),
+                  const Text('New Ride Request'),
                   Text('From: ' + widget.request.startAddress!),
                   Text('To: ' + widget.request.endAddress!),
                 ],
               ),
               subtitle:
-                  Text('Amount offered: ' + widget.request.price! + 'KES'),
+                  Text('Amount offered: USD ' + widget.request.price!),
             ),
             Padding(
               padding:

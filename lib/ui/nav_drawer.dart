@@ -222,8 +222,8 @@ class _NavDrawerState extends State<NavDrawer> {
                   }
                 },
                 title: !auth.loggedUser.isDriver!
-                    ? 'Switch to driver'
-                    : 'Switch to passenger',
+                    ? 'Switch to Biker'
+                    : 'Switch to Passenger',
               ),
             ),
 

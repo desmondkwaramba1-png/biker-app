@@ -93,7 +93,7 @@ class _MainDriverPageState extends State<MainDriverPage> {
                                 content: Column(
                                   children: [
                                     const Text(
-                                        'You have not yet submitted your documents. Please submit to be able to go on rides '),
+                                        'You have not yet submitted your documents. Please submit to be able to go on rides as a Biker'),
                                     BotButton(
                                         onTap: () {
                                           toggleIndex = 0;
@@ -160,7 +160,7 @@ class _MainDriverPageState extends State<MainDriverPage> {
         selectedItemColor: primaryColor,
         items: const [
           BottomNavigationBarItem(
-              icon: Icon(Icons.menu), label: 'Ride Requests'),
+              icon: Icon(Icons.two_wheeler), label: 'Ride Requests'),
           BottomNavigationBarItem(
               icon: Icon(Icons.attach_money), label: 'My earnings'),
           BottomNavigationBarItem(
